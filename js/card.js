@@ -1,4 +1,5 @@
 $(document).ready(function()
+
 {
 
 	$("#createCard").click( saveToFile );
