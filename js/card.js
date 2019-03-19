@@ -1,3 +1,6 @@
+// card.js 
+// Author: Bailey Dishman 
+
 $(document).ready(function()
 
 {
@@ -7,6 +10,7 @@ $(document).ready(function()
 	// Had help with getting this working from: https://thiscouldbebetter.wordpress.com/2012/12/18/loading-editing-and-saving-a-text-file-in-html5-using-javascrip/
 	function saveToFile()
 	{
+		
 		var cardRefId = document.getElementById("cardRefId").value; 
 		var cardTitle = document.getElementById("cardTitle").value; 
 		var cardDes = document.getElementById("cardDes").value;
@@ -36,7 +40,9 @@ $(document).ready(function()
 	
 	function destroyClickedElement(event)
 	{
+		
 		document.body.removeChild(event.target);
+		
 	}
 	
 });
