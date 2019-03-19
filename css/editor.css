@@ -15,9 +15,10 @@ body {
 
 button {
 
-	width: 120px;
-	height: 70px;
-	margin-left: 45px;
+	width: 100px;
+	height: 50px;
+	margin-left: 70px;
 	margin-top: 10px;
+	background-color: white;
 
 }
