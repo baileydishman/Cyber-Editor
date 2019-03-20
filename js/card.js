@@ -2,24 +2,28 @@
 // Author: Bailey Dishman 
 
 $(document).ready(function()
-
 {
 
 	$("#createCard").click( saveToFile );
 	
 	// Had help with getting this working from: https://thiscouldbebetter.wordpress.com/2012/12/18/loading-editing-and-saving-a-text-file-in-html5-using-javascrip/
+	
+	// saveToFile
 	function saveToFile()
 	{
 		
+		// Save all values given by user
 		var cardRefId = document.getElementById("cardRefId").value; 
 		var cardTitle = document.getElementById("cardTitle").value; 
 		var cardDes = document.getElementById("cardDes").value;
 		var cardAPCost = document.getElementById("cardAPCost").value;
 		var cardDam = document.getElementById("cardDam").value; 
 		var cardHeal = document.getElementById("cardHeal").value;
-		var cardSpe = document.getElementById("cardSpe").value;
+		var cardSpecial = document.getElementById("cardSpecial").value;
 		
-		var jsonData = '{"jRefId":' + cardRefId + ',"jTitle":"' + cardTitle + '","jDescription":"' + cardDes + '","jApCost":' + cardAPCost + ',"jDamage":' + cardDam + ',"jHealing":' + cardHeal + ',"jSpecial":' + cardSpe + '}';
+		var jsonData = '{"jRefId":' + cardRefId + ',"jTitle":"' + cardTitle 
+		+ '","jDescription":"' + cardDes + '","jApCost":' + cardAPCost + ',"jDamage":' 
+		+ cardDam + ',"jHealing":' + cardHeal + ',"jSpecial":' + cardSpecial + '}';
 	
 		var fileNameToSaveAs = cardRefId + ".json";
 		
@@ -36,13 +40,14 @@ $(document).ready(function()
 	 
 		downloadLink.click();
 		
-	}
+	} // End of saveToFile
 	
+	// destroyoClickedElement
 	function destroyClickedElement(event)
 	{
 		
 		document.body.removeChild(event.target);
 		
-	}
+	} // End of destroyClickedElement
 	
 });
