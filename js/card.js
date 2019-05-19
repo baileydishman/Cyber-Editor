@@ -1,5 +1,7 @@
+//
 // card.js 
 // Author: Bailey Dishman 
+//
 
 $(document).ready(function()
 {
@@ -40,7 +42,8 @@ $(document).ready(function()
 	 
 		downloadLink.click();
 		
-	} // End of saveToFile
+	} 
+	// End of saveToFile
 	
 	// destroyoClickedElement
 	function destroyClickedElement(event)
@@ -48,6 +51,7 @@ $(document).ready(function()
 		
 		document.body.removeChild(event.target);
 		
-	} // End of destroyClickedElement
+	} 
+	// End of destroyClickedElement
 	
 });
