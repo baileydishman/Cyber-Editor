@@ -17,15 +17,19 @@ Author: Bailey Dishman
 		<title>Card Editor</title>
 		
 		<!-- CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		<link rel="stylesheet" href="css/editor.css">
 		
 		<!-- JavaScript -->
 		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 		<script src="validation/dist/jquery.validate.js"></script>
 		<script type="text/javascript" src="js/validation.js"></script>
 		<script type="text/javascript" src="js/card.js"></script>
 	
-	</head> <!-- End of Head -->
+	
+	</head> 
+	<!-- End of Head -->
 
 	<!-- Body -->
 	<body>
@@ -34,30 +38,33 @@ Author: Bailey Dishman
 		<form id="cardForm"> 
 		
 			<label>Reference ID: </label>
-			<input type="text" id="cardRefId"><br>
+			<input type="text" id="cardRefId" class="form-control"><br>
 				
 			<label>Title: </label>
-			<input type="text" id="cardTitle"><br>
+			<input type="text" id="cardTitle" class="form-control"><br>
 				
 			<label>Description: </label>
-			<input type="text" id="cardDes"><br>
+			<input type="text" id="cardDes" class="form-control"><br>
 				
 			<label>AP Cost:</label>
-			<input type="text" id="cardAPCost"><br>
+			<input type="text" id="cardAPCost" class="form-control"><br>
 				
 			<label>Damage: </label>
-			<input type="text" id="cardDam"><br>
+			<input type="text" id="cardDam" class="form-control"><br>
 				
 			<label>Healing: </label>
-			<input type="text" id="cardHeal"><br>
+			<input type="text" id="cardHeal" class="form-control"><br>
 			
 			<label>Special: </label>
-			<input type="text" id="cardSpecial"><br>
+			<input type="text" id="cardSpecial" class="form-control"><br>
 			
-			<button id="createCard">Create Card</button>
+			<button id="createCard" class="btn btn-primary">Create</button>
 		
-		</form> <!-- End of Form -->
-	
-	</body> <!-- End of Body -->
+		</form> 
+		<!-- End of Form -->
+		
+	</body> 
+	<!-- End of Body -->
 
-</html> <!-- End of HTML --> 
+</html> 
+<!-- End of HTML --> 
