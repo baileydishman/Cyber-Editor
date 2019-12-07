@@ -1,7 +1,5 @@
-//
-// card.js 
 // Author: Bailey Dishman 
-//
+// File: card.js
 
 $(document).ready(function()
 {
@@ -15,24 +13,25 @@ $(document).ready(function()
 	{
 		
 		// Save all values given by user
-		var cardRefId = document.getElementById("cardRefId").value; 
-		var cardTitle = document.getElementById("cardTitle").value; 
-		var cardDes = document.getElementById("cardDes").value;
-		var cardAPCost = document.getElementById("cardAPCost").value;
-		var cardDam = document.getElementById("cardDam").value; 
-		var cardHeal = document.getElementById("cardHeal").value;
-		var cardSpecial = document.getElementById("cardSpecial").value;
+		let cardRefId = document.getElementById("cardRefId").value; 
+		let cardTitle = document.getElementById("cardTitle").value; 
+		let cardDes = document.getElementById("cardDes").value;
+		let cardAPCost = document.getElementById("cardAPCost").value;
+		let cardDam = document.getElementById("cardDam").value; 
+		let cardHeal = document.getElementById("cardHeal").value;
+		let cardSpecial = document.getElementById("cardSpecial").value;
 		
-		var jsonData = '{"jRefId":' + cardRefId + ',"jTitle":"' + cardTitle 
+		let jsonData = '{"jRefId":' + cardRefId + ',"jTitle":"' + cardTitle 
 		+ '","jDescription":"' + cardDes + '","jApCost":' + cardAPCost + ',"jDamage":' 
 		+ cardDam + ',"jHealing":' + cardHeal + ',"jSpecial":' + cardSpecial + '}';
 	
-		var fileNameToSaveAs = cardRefId + ".json";
+		let fileNameToSaveAs = cardRefId + ".json";
 		
-		var textToSaveAsBlob = new Blob([jsonData], {type:"text/plain"});
-		var textToSaveAsURL = window.URL.createObjectURL(textToSaveAsBlob);
+		let textToSaveAsBlob = new Blob([jsonData], {type:"text/plain"});
+		let textToSaveAsURL = window.URL.createObjectURL(textToSaveAsBlob);
 		
-		var downloadLink = document.createElement("a");
+		let downloadLink = document.createElement("a");
+		
 		downloadLink.download = fileNameToSaveAs;
 		downloadLink.innerHTML = "Download File";
 		downloadLink.href = textToSaveAsURL;
