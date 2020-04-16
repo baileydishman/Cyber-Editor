@@ -1,0 +1,75 @@
+<!-- 
+
+index.html
+Author: Bailey Dishman
+
+-->
+
+<!doctype html>
+
+<html lang="us">
+
+	<!-- Head -->
+	<head>
+	
+		<meta charset="utf-8">
+		
+		<title>Card Editor</title>
+		
+		<!-- CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/editor.css">
+		
+		<!-- JavaScript -->
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+		<script src="validation/dist/jquery.validate.js"></script>
+		<script type="text/javascript" src="js/validation.js"></script>
+		<script type="text/javascript" src="js/card.js"></script>
+	
+	
+	</head> 
+	<!-- End of Head -->
+
+	<!-- Body -->
+	<body>
+
+		<!-- Form -->
+		<form id="cardForm">
+		
+			<label>Choose a skin:  </label>
+			<select id="charSkin" name="charSkin">
+				<option value="Muppet Trumpet">Muppet Trumpet</option>
+				<option value="Weird Fish">Weird Fish</option>
+				<option value="Skeleton Fighter">Skeleton Fighter</option>
+			</select>
+			<br>
+			
+			<label>Character Name: </label>
+			<input type="text" id="charName" class="form-control"><br>
+		
+			<label>Damage: </label>
+			<input type="text" id="charDamage" class="form-control"><br>
+		
+			<label>Health: </label>
+			<input type="text" id="charHealth" class="form-control"><br>
+				
+			<label>Attack Power: </label>
+			<input type="text" id="charAttackPower" class="form-control"><br>
+				
+			<label>Speed: </label>
+			<input type="text" id="charSpeed" class="form-control"><br>
+				
+			<label>Defense:</label>
+			<input type="text" id="charDefense" class="form-control"><br>
+			
+			<button id="createCard" class="btn btn-primary">Create</button>
+		
+		</form> 
+		<!-- End of Form -->
+		
+	</body> 
+	<!-- End of Body -->
+
+</html> 
+<!-- End of HTML --> 

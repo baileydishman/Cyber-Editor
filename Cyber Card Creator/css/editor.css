@@ -1,0 +1,28 @@
+/* 
+
+style.css
+Author: Bailey Dishman
+ 
+*/
+
+/* body */
+body {
+
+	background-color: #35c4aa;
+	margin: 50px;
+	font-size: 150%;
+
+} 
+/* body */
+
+/* button */
+button {
+
+	width: 100px;
+	height: 50px;
+	margin-left: 70px;
+	margin-top: 10px;
+	background-color: white;
+
+} 
+/* End of button */
